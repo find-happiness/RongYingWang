@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <android.support.v4.widget.SwipeRefreshLayout
+      android:id="@+id/swipe_refresh"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/recyclerView"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="@dimen/spacing_medium"
+          android:layout_marginRight="@dimen/spacing_medium"
+          />
+
+      <com.wang.avi.AVLoadingIndicatorView
+          android:id="@+id/avloadingIndicatorView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:visibility="visible"
+          app:indicator="LineScale"
+          app:indicator_color="@color/colorPrimary"
+          />
+
+      <TextView
+          android:id="@+id/no_data"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="暂无数据"
+          android:textColor="@color/colorPrimary"
+          android:textSize="@dimen/text_title"
+          android:visibility="gone"
+          />
+    </FrameLayout>
+
+  </android.support.v4.widget.SwipeRefreshLayout>
+
+  <android.support.design.widget.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="投资列表"
+          android:textColor="@color/white"
+          android:textSize="@dimen/text_title"
+          />
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="@dimen/spacing_medium"
+          android:src="@android:drawable/ic_menu_search"
+          />
+
+    </RelativeLayout>
+
+  </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.CoordinatorLayout>
+

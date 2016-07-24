@@ -7,7 +7,7 @@ android {
 
   defaultConfig {
     applicationId "com.rongyingwang.app"
-    minSdkVersion 9
+    minSdkVersion 10
     targetSdkVersion 23
     versionCode 1
     versionName "1.0"
@@ -25,6 +25,13 @@ dependencies {
 
   compile fileTree(dir: 'libs', include: ['*.jar'])
   testCompile 'junit:junit:4.12'
+  compile project(':okhttpcookie')
+  compile project(':ViewPagerIndicator')
+  apt 'com.jakewharton:butterknife-compiler:8.1.0'
+  apt daggerCompiler
+  testApt daggerCompiler
+  androidTestApt daggerCompiler
+  compile 'com.android.support:design:23.4.0'
   compile 'com.android.support:appcompat-v7:23.4.0'
   compile 'com.android.support:recyclerview-v7:23.4.0'
   compile 'com.android.support:palette-v7:23.4.0'
@@ -38,10 +45,14 @@ dependencies {
   compile 'com.squareup.okhttp3:okhttp-android-support:3.3.0'
   compile 'com.squareup.okhttp3:logging-interceptor:3.3.0'
   compile 'io.reactivex:rxandroid:1.2.1'
-  compile project(':okhttpcookie')
   compile 'com.squareup:otto:1.3.8'
-  compile "com.google.dagger:dagger:2.5"
-  apt daggerCompiler
-  testApt daggerCompiler
-  androidTestApt daggerCompiler
+  compile 'com.google.dagger:dagger:2.5'
+  compile 'com.jakewharton:butterknife:8.1.0'
+  compile 'com.android.support:support-v4:23.4.0'
+  compile 'com.bigkoo:convenientbanner:2.0.5'
+  compile 'com.wang.avi:library:1.0.5'
+  compile 'com.nineoldandroids:library:2.4.0'
+  compile "com.android.support:cardview-v7:23.4.0"
+  compile project(':WaveView')
+  compile 'com.github.anzewei:parallaxbacklayout:0.4'
 }

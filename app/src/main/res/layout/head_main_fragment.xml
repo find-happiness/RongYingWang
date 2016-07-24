@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+    </com.bigkoo.convenientbanner.ConvenientBanner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:orientation="horizontal"
+        >
+
+      <com.rongyingwang.app.widget.ImgWithText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          app:img="@drawable/btn_main_click"
+          app:text="@string/i_want_invest"
+          />
+      <com.rongyingwang.app.widget.ImgWithText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          app:img="@drawable/btn_main_click"
+          app:text="@string/member_login"
+          />
+      <com.rongyingwang.app.widget.ImgWithText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          app:img="@drawable/btn_main_click"
+          app:text="@string/news"
+          />
+      <com.rongyingwang.app.widget.ImgWithText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          app:img="@drawable/btn_main_click"
+          app:text="@string/store"
+          />
+    </LinearLayout>
+
+  </LinearLayout>
+</android.support.v7.widget.CardView>
+

@@ -2,7 +2,9 @@ package com.rongyingwang.app.injection.component;
 
 import com.rongyingwang.app.injection.PerActivity;
 import com.rongyingwang.app.injection.module.ActivityModule;
-import com.rongyingwang.app.ui.MainActivity;
+import com.rongyingwang.app.ui.main.InvestFragment;
+import com.rongyingwang.app.ui.main.MainActivity;
+import com.rongyingwang.app.ui.main.MainFragment;
 import dagger.Component;;
 
 /**
@@ -12,4 +14,6 @@ import dagger.Component;;
 public interface ActivityComponent {
 
   void inject(MainActivity mainActivity);
+  void inject(MainFragment mainFragment);
+  void inject(InvestFragment inVestFragment);
 }

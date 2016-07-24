@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/spacing_medium"
+    android:paddingRight="@dimen/spacing_medium"
+    tools:context="com.rongyingwang.app.ui.main.LoginFragment"
+    >
+
+
+  <EditText
+      android:id="@+id/member"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/spacing_large"
+      android:background="@drawable/gray_stroke_corner"
+      android:hint="输入账号/邮箱/手机"
+      android:paddingBottom="@dimen/spacing_large"
+      android:paddingLeft="@dimen/spacing_small"
+      android:paddingTop="@dimen/spacing_large"
+      android:textSize="@dimen/text_body"
+      />
+
+  <EditText
+      android:id="@+id/password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/member"
+      android:layout_marginTop="@dimen/spacing_medium"
+      android:background="@drawable/gray_stroke_corner"
+      android:hint="输入密码"
+      android:inputType="textPassword"
+      android:paddingBottom="@dimen/spacing_large"
+      android:paddingLeft="@dimen/spacing_small"
+      android:paddingTop="@dimen/spacing_large"
+      android:textSize="@dimen/text_body"
+      />
+  <Button
+      android:id="@+id/login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/password"
+      android:layout_marginTop="@dimen/spacing_large"
+      android:background="@color/colorPrimary"
+      android:text="登录"
+      android:textColor="@color/white"
+      android:textSize="@dimen/text_title"
+      />
+
+  <TextView
+      android:id="@+id/forget_psw"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/login"
+      android:layout_marginTop="@dimen/spacing_medium"
+      android:text="忘记密码？"
+      />
+
+  <TextView
+      android:id="@+id/regster"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@id/login"
+      android:layout_marginTop="@dimen/spacing_medium"
+      android:text="注册"
+      android:textColor="@color/colorPrimary"
+      />
+</RelativeLayout>

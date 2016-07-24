@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RongYingWang.iml" filepath="$PROJECT_DIR$/RongYingWang.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ViewPagerIndicator/ViewPagerIndicator.iml" filepath="$PROJECT_DIR$/ViewPagerIndicator/ViewPagerIndicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WaveView/WaveView.iml" filepath="$PROJECT_DIR$/WaveView/WaveView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/okhttpcookie/okhttpcookie.iml" filepath="$PROJECT_DIR$/okhttpcookie/okhttpcookie.iml" />
     </modules>

@@ -1,1 +1,1 @@
-include ':app', ':okhttpcookie'
+include ':app', ':okhttpcookie', ':ViewPagerIndicator', ':WaveView'
